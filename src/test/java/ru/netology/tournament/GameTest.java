@@ -18,6 +18,9 @@ class GameTest {
         int expected = 1;
 
 
+        Assertions.assertEquals(actual, expected);
+
+
     }
 
     @Test
@@ -31,6 +34,9 @@ class GameTest {
         int actual = game.round("Василий", "Степан");
         int expected = 2;
 
+        Assertions.assertEquals(actual, expected);
+
+
     }
 
     @Test
@@ -43,6 +49,10 @@ class GameTest {
         game.register(player2);
         int actual = game.round("Василий", "Степан");
         int expected = 0;
+
+
+        Assertions.assertEquals(actual, expected);
+
 
     }
 
